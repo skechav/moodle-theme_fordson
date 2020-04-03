@@ -1,109 +1,100 @@
-// Simprato preset 1.0.0
-// 
-
-//
-// Color system
-//
+// Simprato preset 1.0.0 
+// variables
 
 $white:    #fff !default;
-$gray-100: #fafafa !default;
-$gray-200: #F9F8FC !default;
-$gray-300: #EDEDED !default;
-$gray-400: #cbc8d0 !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #868e96 !default;
-$gray-700: #444 !default;
-$gray-800: #343a40 !default;
-$gray-900: #17141F !default;
+$gray-700: #495057 !default;
+$gray-800: #373a3c !default;
+$gray-900: #212529 !default;
+
+$gray-base: #ccc !default;
+
 $black:    #000 !default;
 
-$blue:    #007bff !default;
+$blue:    #1177d1 !default;
 $indigo:  #6610f2 !default;
-$purple:  #593196 !default;
+$purple:  #613d7c !default;
 $pink:    #e83e8c !default;
-$red:     #FC3939 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #EFA31D !default;
-$green:   #13B955 !default;
+$red:     #d9534f !default;
+$orange:  #f0ad4e !default;
+$yellow:  #ff7518 !default;
+$green:   #5cb85c !default;
 $teal:    #20c997 !default;
-$cyan:    #009CDC !default;
+$cyan:    #5bc0de !default;
 
-$primary:       $purple !default;
-$secondary:     #A991D4 !default;
-$success:       $green !default;
+$primary:       #447198 !default;
+$secondary:     $gray-800 !default;
+$success:       $teal !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-200 !default;
-$dark:          $gray-900 !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
 
 // Options
-
 $enable-rounded: false !default;
 
 // Body
-
-$body-color:                $gray-700 !default;
-
-// Links
-
-$link-hover-color:          $primary !default;
+$body-color:    $gray-800 !default;
+$body-bg:       #dae6e5 !default;
+$drawer-bg:     rgba(235, 251, 255, 0.8) !default;
+$card-bg:       $white !default;
+$footer-bg:     rgba(14, 62, 70, 0.9) !default;
 
 // Fonts
-
-$font-size-base:              0.875rem !default;
-
-// Tables
-
-$table-border-color:          rgba(0, 0, 0, 0.05) !default;
-
-// Forms
-
-$input-focus-border-color:              $primary !default;
-
-// Dropdowns
-
-$dropdown-link-color:               $gray-700;
-$dropdown-link-hover-color:         $primary;
-$dropdown-link-hover-bg:            $gray-300;
-
-// Navs
-
-$nav-tabs-border-color:             $gray-300 !default;
-$nav-tabs-link-hover-border-color:  $primary !default;
+$font-size-base: 0.9375rem !default;
+$headings-font-weight:   300 !default;
 
 // Navbar
-
-$navbar-padding-y:                  1.2rem !default;
-
-$navbar-dark-hover-color:           rgba($white,.9) !default;
-$navbar-dark-active-color:          rgba($white,.9) !default;
-
-$navbar-light-color:                rgba($black,.4) !default;
-$navbar-light-active-color:         rgba($black,.7) !default;
-$navbar-light-disabled-color:       rgba($black,.2) !default;
+$navbar-dark-hover-color:           rgba($white, 1) !default;
+$navbar-light-hover-color:          rgba($black, 1) !default;
+$navbarurl : #fff !default;
 
 // Breadcrumbs
+$breadcrumb-padding-y:              .25rem !default;
+$breadcrumb-padding-x:              0 !default;
+$breadcrumb-item-padding:           .5rem !default;
+$breadcrumb-margin-bottom:          0 !default;
+$breadcrumb-divider: "/" !default;
+$breadcrumb-divider-rtl: "/" !default;
 
 $breadcrumb-bg: $primary !default;
 $breadcrumb-bg-hover: darken($primary, 15%) !default;
-$breadcrumb-text-color: #ffffff !default;
+$breadcrumb-text-color: $white !default;
+$breadcrumbdash: $gray-200 !default;
+$breadcrumbdimmed: $gray-600 !default;
 
-// Progress bars
+// Dropdowns
+$dropdown-bg:                       $white !default;
+$dropdown-border-color:             rgba($black, .15) !default;
+$dropdown-divider-bg:               $gray-200 !default;
+$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
 
-$progress-bg:                       $gray-300 !default;
-$progress-bar-bg:                   $primary !default;
+$dropdown-link-color:               $gray-900 !default;
+$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
+$dropdown-link-hover-bg:            $gray-200 !default;
 
-// List group
+$dropdown-link-active-color:        $white !default;
+$dropdown-link-active-bg:           $gray-400 !default;
 
-$list-group-bg:                     $gray-900;
-$list-group-border-color:           transparent;
+// Alerts
+$alert-border-width:                0 !default;
 
-$list-group-hover-bg:               lighten($list-group-bg, 10%);
-$list-group-active-color:           $white;
-$list-group-active-bg:              $list-group-bg;
-
-$list-group-disabled-color:         lighten($list-group-bg, 30%);
+$theme-colors: (
+    primary: $primary,
+    secondary: $gray-200,
+    success: $success,
+    info: $info,
+    warning: $orange,
+    danger: $danger,
+    light: $gray-100,
+    dark: $gray-800
+);
 
 
 // Import FontAwesome.
@@ -115,173 +106,63 @@ $list-group-disabled-color:         lighten($list-group-bg, 30%);
 // Import Core moodle CSS
 @import "../../boost/scss/moodle";
 
+// Let theme know we are using Modern Moodle
+$modernmoodlepreset: 1;
 
-// Variables ===================================================================
 
-// Buttons =====================================================================
+// Preset CSS
 
-.btn {
+body {
+    -webkit-font-smoothing: antialiased;
+}
 
-  &:focus,
-  &:active,
-  &:active:focus,
-  &.active:focus {
-    outline: none;
-  }
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+}
 
-  &-secondary {
+.filemanager-container,
+.filepicker-filelist {
+    @extend .border;
+}
+
+// Rounded user pictures
+.userpicture {
+    border-radius: 50%;
+}
+
+// Navdrawer pull right
+[data-region="drawer"] {
+    padding: 20px 0 20px 20px;
+}
+
+// Content area bkg
+div#learningcontent {
+    position: relative;
     background-color: $white;
-    border-color: #ccc;
-    color: $gray-900;
-
-    &:hover {
-      background-color: $gray-300;
-      border-color: $gray-500;
-      color: $gray-900;
-    }
-
-    &.disabled {
-      background-color: $white;
-      border-color: lighten(#ccc, 5%);
-      color: lighten($gray-900, 5%);
-    }
-  }
-
-  &-warning {
-    color: $white;
-  }
-
-  &-primary:focus {
-    box-shadow: 0 0 5px lighten($primary, 10%);
-  }
-
-  &-secondary:focus {
-    box-shadow: 0 0 5px $gray-400;
-  }
-
-  &-success:focus {
-    box-shadow: 0 0 5px lighten($success, 10%);
-  }
-
-  &-info:focus {
-    box-shadow: 0 0 5px lighten($info, 10%);
-  }
-
-  &-warning:focus {
-    box-shadow: 0 0 5px lighten($warning, 10%);
-  }
-
-  &-danger:focus {
-    box-shadow: 0 0 5px lighten($danger, 10%);
-  }
-
-  &.disabled:focus {
-    box-shadow: none;
-  }
-
+    border: 0 !important;
+    border-top: 1rem solid $primary !important;
+}
+.course-content .current::before {
+    border-left: 0;
 }
 
-// Typography ==================================================================
-
-// Tables ======================================================================
-
-.table .thead-dark th {
-  background-color: $secondary;
-  border-color: $table-border-color;
+// Remove extra padding at top of page
+#page-header .pb-3 {
+    padding-bottom: 0 !important;
+}
+#page-header .card-body {
+    padding-bottom: 0;
+}
+.course-content li#section-0 .content {
+    margin-top: 0;
+}
+.editing .course-content li#section-0 .content {
+    margin-top: 2rem; 
 }
 
-// Forms =======================================================================
-
-.form-control:focus {
-  box-shadow: 0 0 5px rgba(100,65,164,.4);
+.fp-blocks {
+    padding-top: 2rem;
 }
-
-// Navs ========================================================================
-
-.nav-tabs {
-
-  .nav-link,
-  .nav-link.active, {
-    border-width: 0 0 1px 0;
-  }
-
-  .nav-link:hover,
-  .nav-link.active,
-  .nav-link.active:hover,
-  .nav-link.active:focus {
-    border-bottom: 1px solid $primary;
-  }
-
-  .nav-item + .nav-item {
-    margin-left: 0;
-  }
-}
-
-
-// Indicators ==================================================================
-
-.badge {
-  padding-bottom: 0.4em;
-
-  &-secondary,
-  &-warning {
-    color: $white;
-  }
-}
-
-// Progress bars ===============================================================
-
-.progress {
-  height: 18px;
-}
-
-.progress_bar_completed {
-    background-color: $gray-400;
-    text-align: right;
-}
-
-// Containers ==================================================================
-
-.list-group {
-
-  &-item {
-    color: rgba(255, 255, 255, 0.8);
-
-    &.active,
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
-
-    &.active {
-      font-weight: bold;
-
-      &:hover {
-        background-color: $list-group-hover-bg;
-      }
-    }
-
-    &.disabled:hover {
-      color: $list-group-disabled-color;
-    }
-  }
-}
-
-
-// Fordson Styling
-.dropdown-item a {
-    color: initial;
-}
-
-.list-group-item-action:active {
-    color: #444;
-    background-color: initial;
-}
-
-div#blockslider {
-    padding-top: 2rem!important;
-}
-
 .section-go-link {
     padding: .25rem;
     margin: .5rem;
@@ -289,7 +170,37 @@ div#blockslider {
     display: inline-block;
     border: 1px solid $gray-300;
 }
+// Progress Bars
+
+.progress_bar {
+    background-color: $gray-100;
+    text-align: center;
+}
+
+.progress_bar_completed {
+    background-color: $primary;
+    text-align: right;
+}
 #region-main {
     border: 0;
-    background-color: transparent;
+    background-color: $card-bg;
+}
+
+.mt-2.mb-1 {
+    position: relative;
+    background-color: darken($body-bg, 10%);
+    padding: $spacer;
+    border-radius: $border-radius;
+    margin: 0!important;
+    border-top: 7px solid rgba(0,0,0,.2);
+    border-radius: 0;
+}
+
+.activity-navigation {
+    background-color: $card-bg;
+    padding: 1rem 0;
+    margin: 0 $gutterwidth;
+    border: 1px solid $gray-400;
+    border-radius: $border-radius;
+    z-index: 1;
 }
